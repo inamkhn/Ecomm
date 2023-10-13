@@ -3,15 +3,14 @@ import Products from '../Products'
 import { Col, Container, Row } from "react-bootstrap";
 import Product from "../components/Product";
 import axios from "axios";
-// import { useGetProductsQuery } from "../slices/productApiSlice";
-// import { useGetAllProductsQuery } from "../slices/apiSlice";
+import { useGetProductsQuery } from "../slices/apiSlice";
+
 
 
 const HomePage = () => {
 
-  //  const { data:Products, isLoading, error } = useGetAllProductsQuery();
-  //  console.log(Product)
-
+  //  const { data:Products, isLoading, error } = useGetProductsQuery("");
+  //  console.log(Products)
     const [Products, setProducts] = useState([]);
     const [loading,setLoading] = useState(false)
     
